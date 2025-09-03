@@ -1,0 +1,17 @@
+body {
+    background: linear-gradient(135deg, #1abc9c, #16a085);
+    font-family: 'Poppins', sans-serif;
+}
+
+.card {
+    background-color: #ffffff;
+    border: none;
+}
+
+h3 {
+    font-weight: 600;
+}
+
+.btn {
+    border-radius: 10px;
+}

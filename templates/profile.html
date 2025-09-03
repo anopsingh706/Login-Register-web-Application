@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center">
+  <div class="card shadow-lg p-4" style="width: 500px; border-radius: 15px;">
+    <h3 class="text-center mb-4 text-info">My Profile</h3>
+    <form method="POST">
+      <div class="mb-3">
+        <label class="form-label">Name</label>
+        <input type="text" name="name" value="{{ user.name }}" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Phone</label>
+        <input type="text" name="phone" value="{{ user.phone or '' }}" class="form-control">
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <textarea name="address" class="form-control">{{ user.address or '' }}</textarea>
+      </div>
+      <button type="submit" class="btn btn-info w-100">Update Profile</button>
+    </form>
+  </div>
+</div>
+{% endblock %}
